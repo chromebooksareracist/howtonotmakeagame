@@ -19,7 +19,13 @@
       var sandwiches = 0;
       var update = function() {
         sandwiches++;
-        document.getElementById("sandwiches").innerText = "Sandwiches: " + sandwiches;
+        if (sandwiches == 69 || sandwiches == 420 || sandwiches == 69420 || sandwiches == 42069) {
+            document.getElementById("sandwiches").innerText = "Sandwiches: " + sandwiches + " (nice)";
+        }
+        else {
+            document.getElementById("sandwiches").innerText = "Sandwiches: " + sandwiches;
+        }
+        
         if (sandwiches > 20) {
           document.getElementById("levelEndText").hidden = false;
           document.getElementById("moral").hidden = false;
